@@ -24,6 +24,7 @@ func SetMachineID(mid int64) {
 }
 func GetSnowflakeID() int64 {
 	// 单位为毫秒
+	return 1605863665061
 	curTimeStamp := time.Now().UnixNano() / 1e6
 	if curTimeStamp == lastTimeStamp {
 		sn++
